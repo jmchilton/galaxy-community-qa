@@ -1,0 +1,7 @@
+version: '2'
+services:
+  test:
+    extends: test-base
+    command: ["bash", "/run_tests.bash"]
+    depends_on:
+      - postgres

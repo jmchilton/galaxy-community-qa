@@ -1,0 +1,8 @@
+description: Test against bioblend-master tests.
+maintainer_github: nsoranzo
+interface_description: |
+  This test case verifies the latest stable release of bioblend works with
+  Galaxy. Failures resulting from changes to stable Galaxy APIs are the
+  responsibility of Galaxy maintainers to address, failures resulting from the
+  changes due to unstable APIs, changes in how Galaxy is launched or configured
+  are the responsibility of the test case maintainer.

@@ -1,0 +1,27 @@
+{
+    "jobViewName": "Galaxy Community QA",
+    "jobViewDescription": "All Galaxy Community QA jobs",
+    "baseJobName": "gx-community-qa-",
+    "testGithubOrg": "jmchilton",
+    "testGithubProject": "jobs-dsl-test",
+    "targetGithubOrg": "galaxyproject",
+    "targetGithubProject": "galaxy",
+    "defaultTargetPath": "/galaxy",
+    "customFields": [
+        {   
+            "name": "interface_description",
+            "type": "text",
+            "label": "Interface to Galaxy Tested"
+        },
+        {
+            "name": "maintainer_email",
+            "type": "email",
+            "label": "Test Maintainer E-mail"
+        },
+        {
+            "name": "maintainer_github",
+            "type": "github_login",
+            "label": "Test Maintainer Github"
+        }
+    ]
+}

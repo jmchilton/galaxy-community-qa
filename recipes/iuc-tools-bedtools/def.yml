@@ -1,0 +1,8 @@
+description: Test against IUC bedtools.
+maintainer_github: jmchilton
+maintainer_email: jmchilton@gmail.com
+interface_description: |
+  This test case verifies :
+    - Various common tool features work within Galaxy.
+    - Traditional tool XML based tool tests work with Galaxy.
+    - Conda based dependency resolution works for tools and the bedtools recipe in bioconda.
