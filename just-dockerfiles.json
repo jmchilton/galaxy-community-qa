@@ -3,7 +3,7 @@
     "jobViewDescription": "All Galaxy Community QA jobs",
     "baseJobName": "gx-community-qa-",
     "testGithubOrg": "jmchilton",
-    "testGithubProject": "jobs-dsl-test",
+    "testGithubProject": "galaxy-community-qa",
     "targetGithubOrg": "galaxyproject",
     "targetGithubProject": "galaxy",
     "defaultTargetPath": "/galaxy",
