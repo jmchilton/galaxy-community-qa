@@ -1,5 +1,6 @@
 description: Test against bioblend-master tests.
 maintainer_github: nsoranzo
+timeout: 3600
 interface_description: |
   This test case verifies the latest stable release of bioblend works with
   Galaxy. Failures resulting from changes to stable Galaxy APIs are the

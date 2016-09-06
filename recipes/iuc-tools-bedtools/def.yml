@@ -1,6 +1,7 @@
 description: Test against IUC bedtools.
 maintainer_github: jmchilton
 maintainer_email: jmchilton@gmail.com
+timeout: 3600
 interface_description: |
   This test case verifies :
     - Various common tool features work within Galaxy.

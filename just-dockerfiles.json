@@ -6,7 +6,7 @@
     "testGithubProject": "galaxy-community-qa",
     "targetGithubOrg": "galaxyproject",
     "targetGithubProject": "galaxy",
-    "defaultTargetPath": "/galaxy",
+    "defaultTargetPath": "/target",
     "customFields": [
         {   
             "name": "interface_description",

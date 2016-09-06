@@ -5,7 +5,8 @@ RUN apt-get -qq update && \
     apt-get install --no-install-recommends -y postgresql-client python-pip && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV GALAXY_USER_EMAIL=admin@galaxy.org \
+ENV TARGET_PATH=/target \
+    GALAXY_USER_EMAIL=admin@galaxy.org \
     GALAXY_USER=admin \
     GALAXY_USER_PASSWD=240761c77ed4682c26283e158a7ddf32 \
     GALAXY_CONFIG_OVERRIDE_ADMIN_USERS=admin@galaxy.org \

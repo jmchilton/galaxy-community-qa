@@ -1,0 +1,11 @@
+description: Test can run a simple job against Pulsar.
+maintainer_github: jmchilton
+maintainer_email: jmchilton@gmail.com
+timeout: 300
+interface_description: |
+  This test case verifies the a stable, supported version of Pulsar can execute jobs
+  from Galaxy. Failures resulting from changes to Pulsar server API are the responsiblity
+  of the test maintainer to update, failures resulting from changes to Galaxy job runners
+  or updates to the Pulsar client on the Galaxy side are the responsiblity of the Galaxy
+  committers to address.
+
