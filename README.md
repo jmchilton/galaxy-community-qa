@@ -8,7 +8,26 @@ efforts. Galaxy has a plethora of platform testing in the core project - but the
 are things that are inappropriate to include there - such as testing specific 
 workflows and tools, testing an external project's interface into Galaxy (such as
 bioblend or planemo), and testing with frameworks or languages that Galaxy doesn't 
-    currently support (such as selenium).
+currently support (such as selenium).
+
+## Overview
+
+When Jenkins is configured as described below, each recipe in this repository will
+become a Jenkins job. Jobs for these recipes will be linked to the job for this
+repository:
+
+![galaxy-community-qa main job](docs/project_in_jenkins.png)
+
+In addition to jobs for each of these recipes, a new Jenkins view will be created
+containing all of these jobs:
+
+![galaxy-community-qa generated view](docs/generated_view.png)
+
+Each resulting job will be run against Galaxy daily and the will display job metadata -
+such as who is reposible for maintaining the job and the interface of Galaxy being tested.
+
+![galaxy-community-qa generated job](docs/generated_job.png)
+
 
 ## Project Structure
 
@@ -37,6 +56,10 @@ Jenkins can be configured to build one job per test recipe using the following p
  - Install the [jobs-dsl](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin)
    and [Github](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Plugin) plugins.
  - Setup a freestyle project to point at this project's Github repository.
+ - Under Git:
+   - Specify this repository as "Repository URL": git@github.com:jmchilton/galaxy-community-qa.git
+   - Under additional behaviors, select "Advanced sub-modules behaviors" and then
+     " Recursively update submodules"
  - Add a "Build Step" to this Jenkins project for "Process Job DSLs"
  - Choose "Look on Filesystem" for this step and enter the script path 
    ``just-dockerfiles/buildjobs.groovy``.
