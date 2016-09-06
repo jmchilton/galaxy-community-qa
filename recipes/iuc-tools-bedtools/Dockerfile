@@ -24,6 +24,6 @@ RUN mkdir -p $REPOSITORY/.. && \
     git clone $GITHUB_REPO $REPOSITORY
 
 CMD . "$PLANEMO_VIRTUALENV/bin/activate" && \
-    planemo test --conda_dependency_resolution --conda_auto_init --conda_auto_install --galaxy_root "$GALAXY_ROOT" "$REPOSITORY"/tools/bedtools/tagBed.xml
+    planemo test --conda_dependency_resolution --conda_auto_init --conda_auto_install --galaxy_root "$GALAXY_ROOT" "$REPOSITORY"/tools/bedtools
 
 #     planemo conda_install --conda_auto_init --conda_auto_init "$REPOSITORY"/tools/bedtools/tagBed.xml && \
